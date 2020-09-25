@@ -26,6 +26,7 @@ Library
   if os(darwin)
       CC-Options:           "-DMACFUSE"
       CC-Options:           "-DFUSE_USE_VERSION=26"
+      Include-Dirs:           /usr/local/include/osxfuse
   else
       if os(freebsd)
          Includes:           sys/param.h, sys/mount.h
